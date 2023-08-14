@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="/img/favfinal.png">
+    <link rel="stylesheet" href="signin.css" />
+    <title>Admin Sign In</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img src="images/logo.svg" alt="Logo"/></a>
+      <h1>Murshidabad College of <br> Engineering and Technology</h1>
+      <div class="nav-links">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#about">Contact</a></li>
+              <li><a href="signupopt.html"">Login</a></li>
+              <li><a href="signupopt.html"">Sign Up</a></li>
+          </ul>
+      </div>
+  </nav>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="/signin" class="sign-in-form" method="post">
+            <h2 class="title">Admin Sign In</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" name="uname"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" name="pass"/>
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Be a part of MCET Hostel, and enjoy the best moments of your life with the new global family
+            </p>
+            <a href="login.html">
+            <button class="btn transparent" id="sign-up-btn">
+            Admin Sign Up
+            </button></a>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

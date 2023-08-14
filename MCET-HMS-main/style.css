@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/cover2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav img{
+    width: 50px;
+}
+nav h1{
+    margin: 0 2%;
+    font-size: 25px;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: black;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 4px;
+display: block;
+background: #f44336;
+margin: auto;
+transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    text-align: center;
+    transform: translate(-40%,10%);
+}
+.text-box h1{
+    font-size: 32px;
+}
+.text-box p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transition: 1s;
+}
+/* message */
+.message{
+    width: 80%;
+    bottom: 100px;
+    margin-top: 20%;
+    background-color: rgb(5, 11, 67);
+    text-align: center;
+    margin-left: 10%;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.message:hover{
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+        background-color: #4481eb;
+}
+/* message */
+/* course section */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.course p{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    line-height: 22px;
+    color: #777;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.row p{
+    color: #777;
+}
+.course-col{
+    flex-basis: 49%;
+    background-color: #fff3f3;
+    border-radius:10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+.course-col p{
+    text-align: left;
+}
+#latest{
+    color: red;
+}
+.notice .fa{
+    color: black;
+    padding: 0 5px;
+}
+.notice a{
+    text-decoration: none;
+    color: black;
+}
+.notice a:hover{
+    text-decoration: underline;
+}
+.rules .fa{
+    color: black;
+    padding: 0 5px;
+}
+.rules a{
+    text-decoration: none;
+    color: black;
+}
+.course-col h3{
+    margin: 10px 10px ;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+/* campus section */
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.campus-col img{
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+.layer{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgba(44, 89, 194, 0.7) ;
+}
+.layer h3{
+    width: 100%;
+    position:absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 26px;
+    left: 50%;
+    bottom: 10Px;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.5s;
+
+}
+.layer:hover h3{
+opacity: 1;
+bottom: 40%;
+}
+/* Faciclities */
+.facilities{
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center
+}
+.facilities-col{
+    flex-basis: 23%;
+    text-align: left;
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 15px;
+    height: 200px;
+}
+.facilities-col p{
+    padding: 0;
+    font-size: 14px;
+}
+.facilities-col h3{
+    margin: 15px 0;
+    text-align: left;
+}
+/* testimonials section */
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonials-col{
+    flex-basis: 44%;
+    text-align: left;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    background: #fff3f3;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+.testimonials-col img{
+    height: 40px;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+.testimonials-col p{
+    padding: 0;
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonials-col .fa{
+color: #f44336;
+}
+.footer{
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+.footer h4{
+margin-top: 25px;
+margin-bottom: 20px;
+font-weight: 600;
+}
+ .icons {
+    color: #f44336;
+    margin: 0 10px;
+    padding: 13px 0;
+    cursor: pointer;
+}
+.social-icon {
+    height: 46px;
+    width: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.45rem;
+    color: #333;
+    border-radius: 50%;
+    border: 1px solid #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #4481eb;
+    border-color: #4481eb;
+  }
